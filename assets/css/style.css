@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F8F8F6;
+    font-family: 'gordita';
+    background-image: url(../images/banner/nizcare-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; 
+}
+
+@font-face {
+    font-family: 'gordita';
+    src: url('/assets/font/Gordita\ Regular.otf') format('truetype');
+    font-display: swap;
+}
+
+header>div {
+    border-radius: 50px;
+    box-shadow: #5d5d5d4d 0px 0px 0px 10px;
+    background-color: #fff;
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1000000000;
+}
+
+#head>div>nav>a:last-child{
+    background-color: #FFA416;
+    padding: 6px 28px;
+    color: #fff;
+    border-radius: 20px;
+}
