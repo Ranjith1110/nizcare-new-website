@@ -59,7 +59,7 @@ header>div {
     top: 3%;
     left: 50%;
     transform: translate(-50%);
-    z-index: 1000000000;
+    z-index: 1000000;
 }
 
 #head>div>nav>a:nth-child(4) {
