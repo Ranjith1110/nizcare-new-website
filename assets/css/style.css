@@ -7,6 +7,7 @@
 body {
     background-color: var(--bg-color);
     font-family: 'gordita';
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -218,7 +219,7 @@ header>div {
     text-decoration: none;
 }
 
-#cronic-card{
+#cronic-card {
     background-color: var(--bg-color);
     border-radius: 18px;
     box-shadow: #c9c9c94d 0px 0px 0px 1px;
@@ -229,12 +230,13 @@ header>div {
     font-weight: 800;
 }
 
-#app-url{
+#app-url {
     padding: 50px 0 0 0;
     background-color: var(--app-url);
 }
 
-#footer{
+
+#footer {
     padding: 50px 0 0 0;
 }
 
@@ -260,6 +262,17 @@ header>div {
     #second-opinion>div>div:first-child>div:last-child,
     #second-opinion>div>div:last-child>div:first-child {
         height: 40vh;
+    }
+
+    #footer-res {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #app-url{
+        text-align: center;
     }
 }
 
@@ -302,5 +315,10 @@ header>div {
     #second-opinion>div>div>div:last-child>h5,
     #second-opinion>div>div>div:first-child>h5 {
         font-size: 14px;
+    }
+    
+
+    #svg>svg {
+        width: 100px;
     }
 }
