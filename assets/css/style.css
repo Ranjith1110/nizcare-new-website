@@ -24,13 +24,18 @@ body {
     --main-color: #03C888;
     --h2-font: 2.9rem;
     --h2-color: #103235;
+    --atag-color: #215D63;
 }
 
-#health-wellness{
-    padding: 100px 0;
+#health-wellness,
+#health-condition,
+#health-care,
+#second-opinion,
+#surgery {
+    padding: 50px 0;
 }
 
-.cards{
+.cards {
     padding: 50px 0;
 }
 
@@ -42,7 +47,7 @@ body {
     object-fit: cover;
 }
 
-.banner-overlay{
+.banner-overlay {
     position: absolute;
     border-radius: 8px;
     width: 100%;
@@ -62,42 +67,79 @@ header>div {
     z-index: 1000000;
 }
 
-#head>div>nav>a:nth-child(4) {
+#head>div>nav>a:nth-child(4),
+.con-view>a {
     background-color: var(--yellow-color);
-    padding: 6px 28px;
+    padding: 8px 28px;
     color: var(--white);
     border-radius: 20px;
+    text-decoration: none;
 }
 
-#surgery-care>div{
+#slider {
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 70%;
+    background-color: var(--bg-color);
+    transition: left 0.4s ease-in-out;
+    z-index: 1000000;
+}
+
+#slider.show {
+    left: 0;
+}
+
+.navs {
+    margin-top: 25%;
+}
+
+.navs a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--atag-color);
+}
+
+#menuBar,
+#closeIcon {
+    cursor: pointer;
+    color: var(--main-color);
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#surgery-care>div {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000000;
 }
 
-#surgery-care>div>h2{
+#surgery-care>div>h2 {
     font-size: var(--h2-font);
-    font-weight:bolder;
+    font-weight: bolder;
     color: var(--white);
 }
 
-#surgery-care>div>p{
-    
+#surgery-care>div>p {
     color: var(--white);
 }
 
 
 /* Header End */
 
-#health-wellness>div>div:first-child>h2{
+#health-wellness>div>div:first-child>h2,
+#health-condition>div>div:first-child>h2,
+#health-care>div>div:first-child>h2 {
     font-size: var(--h2-font);
     color: var(--h2-color);
     font-weight: 900;
     color: var(--black);
 }
 
-#health-wellness>div>div:first-child>p{
+#health-wellness>div>div:first-child>p,
+#health-condition>div>div:first-child>p,
+#health-care>div>div:first-child>p {
     color: var(--h2-color);
 }
 
@@ -118,7 +160,7 @@ header>div {
 .cards>div>div>div>div>div {
     bottom: 10%;
     left: 5%;
-    z-index: 100;
+    z-index: 10;
 }
 
 .cards>div>div>div>div>div>h5 {
@@ -129,6 +171,7 @@ header>div {
 
 .content>a {
     text-decoration: none;
+    /* display: none; */
     padding: 6px 18px;
     border-radius: 20px;
     font-weight: 500;
@@ -137,14 +180,91 @@ header>div {
     border: 1px solid var(--white);
 }
 
-.content>a:hover{
+/* .cards>div>div>div:hover .content>a{
+    display: block;
+} */
+
+.content>a:hover {
     transition: .5s ease-in;
     background: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.5));
 }
 
-@media (max-width: 992px){
-    #head>div>nav>a{
+#second-opinion>div>div>div:last-child,
+#second-opinion>div>div>div:first-child{
+    border-radius: 20px;
+    /* width: 100%; */
+    background: linear-gradient(to top, rgb(195, 245, 240), rgb(251, 241, 216));
+}
+
+#second-opinion>div>div>div:last-child>h5,
+#second-opinion>div>div>div:first-child>h5{
+    color: var(--atag-color);
+    font-weight: 500;
+}
+
+#second-opinion>div>div>div:last-child>h2,
+#second-opinion>div>div>div:first-child>h2{
+    color: var(--atag-color);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#second-opinion>div>div>div:last-child>div>a,
+#second-opinion>div>div>div:first-child>div>a {
+    background-color: var(--yellow-color);
+    padding: 8px 28px;
+    color: var(--white);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    #head>div>nav>a {
         display: none;
+    }
+    #second-opinion>div>div{
+        flex-direction: column-reverse;
+    }
+    #second-opinion>div>div:first-child>div:last-child,
+    #second-opinion>div>div:last-child>div:first-child{
+        height: 40vh;
     }
 }
 
+@media (max-width:768px) {}
+
+@media (max-width:468px) {
+    #health-wellness>div>div:first-child>h2,
+    #health-condition>div>div:first-child>h2{
+        font-size: 35px; 
+    }
+    #health-wellness>div>div:first-child>p,
+    #health-condition>div>div:first-child>p{
+        font-size: 14px;
+    }
+    #health-wellness{
+        padding: 50px 0;
+    }
+
+    .cards {
+        padding: 25px 0;
+    }
+
+    #second-opinion>div>div:first-child>div:last-child,
+    #second-opinion>div>div:last-child>div:first-child{
+        height: 30vh;
+    }
+
+    #second-opinion{
+        padding: 0px 0px 30px 0px;
+    }
+    #second-opinion>div>div>div:last-child>h2,
+    #second-opinion>div>div>div:first-child>h2{
+        font-size: 28px;
+    }
+
+    #second-opinion>div>div>div:last-child>h5,
+    #second-opinion>div>div>div:first-child>h5{
+        font-size: 14px;
+    }
+}

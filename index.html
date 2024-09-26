@@ -15,36 +15,6 @@
     <!-- AOS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <style>
-        #slider {
-            position: fixed;
-            top: 0;
-            left: -100%;
-            height: 100vh;
-            width: 100%;
-            background-color: #f8f9fa;
-            /* border-radius: 50px; */
-            transition: right 0.4s ease;
-            z-index: 10000;
-        }
-
-        #slider.show {
-            left: 0;
-        }
-        .navs{
-            margin-top: 25%;
-        }
-        .navs a {
-            padding: 10px;
-            text-decoration: none;
-            color: #215D63;
-        }
-
-        #menuBar,
-        #closeIcon {
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body>
@@ -89,7 +59,7 @@
     </header>
 
     <!-- Sidebar -->
-    <div id="slider" class="slider">
+    <div id="slider" class="slider position-fixed d-lg-none">
         <div class="navs d-flex align-items-center flex-column d-lg-none">
             <a href="#">Homecare Services <i style="color: #03C888;" class="fa-solid fa-angle-down"></i></a>
             <a href="#">Partners <i style="color: #03C888;" class="fa-solid fa-angle-down"></i></a>
@@ -98,6 +68,7 @@
         </div>
     </div>
 
+    <!-- Health-wellness Section -->
     <section id="health-wellness">
         <div class="container">
             <div class="text-center">
@@ -120,7 +91,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
                             <div class="overlay"></div>
                             <div class="card-body p-0 position-relative">
@@ -133,7 +104,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
                             <div class="overlay"></div>
                             <div class="card-body p-0 position-relative">
@@ -159,7 +130,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
                             <div class="overlay"></div>
                             <div class="card-body p-0 position-relative">
@@ -172,7 +143,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
                             <div class="overlay"></div>
                             <div class="card-body p-0 position-relative">
@@ -202,6 +173,286 @@
             </div>
         </div>
     </section>
+
+    <!-- Health-wellness Section -->
+    <section id="health-condition">
+        <div class="container">
+            <div class="text-center">
+                <h2>Lab Tests Based on Health Conditions</h2>
+                <p>Book Lab Tests & Health checkups & collect Test reports Online</p>
+            </div>
+
+            <div class="cards">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/healthIssues/fever.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/healthIssues/diabetes.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/healthIssues/bone.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/healthIssues/vitamins.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/healthIssues/thyroid.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/healthIssues/heart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="con-view text-center mt-4">
+                    <a href="#">View More</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Health-care Section -->
+    <section id="health-care">
+        <div class="container">
+            <div class="text-center">
+                <h2>Personalized Home Healthcare</h2>
+                <p>Bringing Quality Medical Care to Your Home's Door Step</p>
+            </div>
+            <div class="cards">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="overlay"></div>
+                            <div class="card-body p-0 position-relative">
+                                <img class="w-100" src="./assets/images/healthCare/Elder-Care.png" alt="">
+                                <div class="content position-absolute">
+                                    <h5 class="card-title mb-3">Elder Care</h5>
+                                    <a href="#">Book now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="overlay"></div>
+                            <div class="card-body p-0 position-relative">
+                                <img class="w-100" src="./assets/images/healthCare/Post-surgery.png" alt="">
+                                <div class="content position-absolute">
+                                    <h5 class="card-title mb-3">Post surgery</h5>
+                                    <a href="#">Book now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="overlay"></div>
+                            <div class="card-body p-0 position-relative">
+                                <img class="w-100" src="./assets/images/healthCare/Cancer-Care.png" alt="">
+                                <div class="content position-absolute">
+                                    <h5 class="card-title mb-3">Cancer Care</h5>
+                                    <a href="#">Book now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="overlay"></div>
+                            <div class="card-body p-0 position-relative">
+                                <img class="w-100" src="./assets/images/healthCare/Mother-&-baby-care.png" alt="">
+                                <div class="content position-absolute">
+                                    <h5 class="card-title mb-3">Mother & baby care</h5>
+                                    <a href="#">Book now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="overlay"></div>
+                            <div class="card-body p-0 position-relative">
+                                <img class="w-100" src="./assets/images/healthCare/Nursing.png" alt="">
+                                <div class="content position-absolute">
+                                    <h5 class="card-title mb-3">Nursing</h5>
+                                    <a href="#">Book now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="overlay"></div>
+                            <div class="card-body p-0 position-relative">
+                                <img class="w-100" src="./assets/images/healthCare/Physiotherapy.png" alt="">
+                                <div class="content position-absolute">
+                                    <h5 class="card-title mb-3">Physiotherapy</h5>
+                                    <a href="#">Book now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Opinion Section -->
+    <section id="second-opinion">
+        <div class="container">
+            <div class="d-flex gap-3 mb-4">
+                <div class="">
+                    <img class="w-100" src="./assets/images/secondOpinion/second-opinion.png" alt="">
+                </div>
+                <div class="text-center d-flex flex-column justify-content-center">
+                    <h5>Second opinion</h5>
+                    <h2>Ask for a free second opinion</h2>
+                    <div class="mt-3">
+                        <a href="#">Request</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex gap-3">
+                <div class="text-center d-flex flex-column justify-content-center">
+                    <h2>Diabetes Management</h2>
+                    <h5>Manage Diabetes with Our Experts</h5>
+                    <div class="mt-3">
+                        <a href="#">Request</a>
+                    </div>
+                </div>
+
+                <div class="">
+                    <img class="w-100" src="./assets/images/secondOpinion/diabetes-ban.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surgery Section -->
+    <section id="surgery">
+        <div class="container">
+            <div class="text-center">
+                <h2>Lab Tests Based on Health Conditions</h2>
+                <p>Book Lab Tests & Health checkups & collect Test reports Online</p>
+            </div>
+
+            <div class="cards">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/surgery/general.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/surgery/kidneyStone.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/surgery/orthopedics.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/surgery/ivf.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/surgery/breast.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/surgery/dental.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/surgery/cancer.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="w-100" src="./assets/images/surgery/cardiology.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="con-view text-center mt-4">
+                    <a href="#">View More</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
 
     <!-- External JS -->
     <script src="./assets/js/script.js"></script>
